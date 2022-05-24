@@ -1,0 +1,281 @@
+@import './functions';
+@import './variables';
+@import './checkbox';
+
+
+#main {
+   @include flexCenterStart;
+   height: auto;
+   background-color: $blue-backg;
+   z-index: 1;
+   padding-top: 3em !important;
+   padding-bottom: 5em !important;
+
+
+
+   h2 {
+      color: $white-darker;
+      font-size: clamp(1rem, 0.9vw, 2rem);
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5em;
+   }
+
+   #kp {
+      color: $white;
+      font-weight: 400;
+      font-size: clamp(3rem, 3.5vw, 8rem);
+   }
+
+   #wd {
+      margin-top: 1em;
+      color: $white-darker;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      font-size: clamp(1rem, 1.5vw, 8rem);
+   }
+
+   #aw {
+      color: $yellow;
+      font-size: clamp(0.8rem, 1vw, 1.1rem);
+      font-weight: 600;
+      letter-spacing: 0.3em;
+      margin-bottom: 0.2em;
+   }
+}
+
+#form {
+   @include flexCenter(column);
+
+   a {
+      margin-top: 3em;
+      text-decoration: none;
+   }
+
+   .yell {
+      margin-top: 1em;
+      margin-bottom: -0.3em;
+      color: $white;
+      font-size: clamp(1.2rem, 1.3vw, 3rem);
+      font-weight: 400;
+   }
+
+   *:focus {
+      outline: none;
+      border: 3px solid $yellow  !important;
+   }
+
+   .short,
+   .med,
+   .long,
+   .link,
+   .project,
+   select {
+      @include flexCenter(column);
+      // line-height: 15px;
+      background-color: $blue-backg;
+      border: solid 4px hsla(235, 45%, 47%, 0.404);
+      margin-top: 1.8em;
+      border-radius: 7px;
+      font-size: 1em;
+      text-align: center;
+      color: $yellow;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+   }
+
+   input::placeholder,
+   textarea::placeholder {
+      color: $yellow-dark;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+   }
+
+   .link {
+      padding: 1em 9em;
+   }
+
+   .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+   }
+
+
+   textarea {
+      resize: none;
+      overflow: hidden;
+      outline: none;
+   }
+
+   .short {
+      padding: 0.8em 9em;
+   }
+
+   .med {
+      padding: 3em 9em;
+   }
+
+   .long {
+      padding: 6em 9em;
+   }
+
+   .project {
+      padding: 3em 1.7em;
+   }
+
+   select {
+      padding: 0.5em 1em;
+      margin-left: 1em;
+   }
+
+
+
+   .button,
+   .add {
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      color: white;
+      font-size: 1.3em;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin-top: 2em;
+      text-decoration: none;
+      background-color: $yellow;
+      padding: 0.4em 6em;
+      border-radius: 10px;
+      box-shadow: 0px 7px $yellow-dark;
+
+      &:hover {
+         box-shadow: 0 10px $yellow-dark;
+         transform: translateY(-3px);
+         transition-duration: 200ms;
+
+         img {
+            transform: rotate(4deg);
+            transition-duration: 200ms;
+
+         }
+      }
+
+      &:active {
+         box-shadow: 0 3px $yellow-dark;
+         transform: translateY(6px);
+      }
+   }
+
+
+
+   .add {
+      color: white-darker;
+      padding: 0.3em 0.6em;
+      border-radius: 6px;
+      margin-top: 0.6em;
+      margin-bottom: 1em;
+      @include flexCenter(row);
+      font-size: 1em;
+   }
+
+   #submit {
+      margin-top: 3em;
+   }
+
+   #theme-div {
+      margin-top: 2em;
+
+      label {
+         padding: 0 0.9em;
+         font-size: 1em;
+         font-weight: 400;
+         color: $yellow;
+         letter-spacing: 0.1em;
+      }
+   }
+
+   #template-version {
+      margin-top: 2em;
+   }
+
+   #choices {
+      @include flexCenter(row);
+   }
+
+   #template_version {
+      margin-right: 2em;
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+   #main {
+      padding: 0 3em;
+      text-align: center;
+
+      #form-div {
+         #containerProject {
+
+            #mainproject0 {
+               @include flexCenter(column);
+
+               label {
+                  margin-top: 1em;
+                  color: white;
+               }
+            }
+         }
+      }
+
+
+      #form {
+
+         .short,
+         .med,
+         .long,
+         .link {
+            margin-top: 1.8em;
+            border-radius: 7px;
+            font-size: 1em;
+            text-align: center;
+            padding: 0.5em 5em;
+            outline: none;
+         }
+
+         .short {
+            padding: 0.5em 5em;
+         }
+
+         .med {
+            padding: 1.5em 5em;
+         }
+
+         .long {
+            padding: 3em 5em;
+         }
+
+         .link {
+            padding: 0.7em 5em;
+         }
+
+         .button,
+         .add {
+            padding: 0.4em 5em;
+         }
+
+         .add {
+            color: white-darker;
+            padding: 0.5em 1em;
+            margin-top: 0.3em;
+            margin-bottom: 1em;
+            @include flexCenter(row);
+            font-size: 1em;
+         }
+
+      }
+
+
+   }
+}

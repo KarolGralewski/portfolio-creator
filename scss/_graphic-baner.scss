@@ -1,0 +1,7 @@
+@import './functions';
+@import './variables';
+
+#graphic-baner {
+   @include flexCenter(column);
+   background-color: $graphic-backg;
+}

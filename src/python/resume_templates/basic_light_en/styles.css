@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+  --accent: #1e9bd1;
+  --accent-light: #1e9bd169;
+
+  --background-light: #f0f0f0;
+  --background-dark: #F8F8F8;
+  --background-darker: #a3a3a3;
+
+  --font-light: #6A6A6A;
+  --font-dark: #6A6A6A;
+  --font-darker: #161616;
+}
+
+
+* {
+  font-family: 'Recursive', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#error {
+  color: var(--accent);
+  padding: 0 10em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+#header {
+  padding: 0 10em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-dark);
+
+}
+
+
+
+#header #hdr-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 10%;
+}
+
+#header #hdr-icons a {
+  padding: 0 1em;
+}
+
+#header #pt {
+  font-size: clamp(1rem, 1.1em, 2rem);
+  color: var(--accent);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+#header #brackets {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: var(--font-light);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+#header #brackets h1 {
+
+  font-size: clamp(2.6rem, 2.65em, 2.75rem);
+  color: var(--font-light);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+#header #brackets img {
+  width: 13px;
+}
+
+#header #info-short {
+  font-size: clamp(1.1rem, 1.3em, 1.6rem);
+
+  color: var(--font-darker);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+#header #link {
+  /* 42just works and if you wonder why, welcome to the club*/
+  position: absolute;
+  left: 42%;
+  right: 42%;
+  bottom: 4%;
+  text-align: center;
+  line-height: 50px;
+}
+
+#header #link img:hover {
+  width: 130px;
+}
+
+
+#projects {
+  position: relative;
+  padding: 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-light);
+}
+
+#projects #first-project,
+#second-project,
+#third-project,
+#fourth-project {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: clamp(1.2rem, 1.4rem, 1.7rem);
+  margin-top: 1em;
+  color: var(--font-darker);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5em;
+
+}
+
+#projects #projects-header {
+  margin-top: 1em;
+  font-size: clamp(1.5rem, 2.6rem, 3rem);
+  color: var(--font-dark);
+  font-weight: 300;
+}
+
+#projects a {
+  position: absolute;
+  left: 42%;
+  right: 42%;
+  bottom: 4%;
+  text-align: center;
+  line-height: 50px;
+}
+
+#about {
+
+  position: relative;
+  padding: 0 10em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-dark);
+}
+
+#about #info-header {
+  font-size: clamp(1.7rem, 1.8rem, 1.9rem);
+  color: var(--font-dark);
+  font-weight: 300;
+}
+
+#about #info-long {
+  font-size: clamp(0.9rem, 1rem, 1.1rem);
+  margin-top: 1em;
+  color: var(--font-darker);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5em;
+}
+
+#about a {
+  position: absolute;
+  left: 42%;
+  right: 42%;
+  bottom: 4%;
+  text-align: center;
+  line-height: 50px;
+}
+
+#contact {
+
+  height: 25vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-light);
+}
+
+#contact #icons {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#contact #icons a img {
+  width: 87px;
+  padding: 0 1.5em;
+}
+
+
+#contact #icons #linkedinIcon img,
+#contact #icons #telegramIcon img {
+  width: 80px;
+}
+
+#contact #iw {
+  font-size: clamp(1.3rem, 1.4em, 1.6rem);
+  color: var(--font-darker);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+#contact #cnt-text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#contact #email,
+#contact #number {
+  margin-top: 1em;
+  color: var(--accent);
+  font-size: clamp(0.9rem, 0.9em, 1.3rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+#footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: hsla(0, 0%, 9%, 0.418);
+  font-weight: 600;
+  font-size: 0.8em;
+  height: 4.5vh;
+  background-color: var(--accent);
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.301);
+  text-decoration: none;
+}
+
+
+#email {
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  #header {
+    padding: 0 2em;
+    height: auto;
+  }
+
+  #header #hdr-icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 4%;
+  }
+
+  #header #pt {
+    margin-top: 7em;
+    font-size: 1em;
+  }
+
+  #header #info-short {
+    margin-bottom: 7em;
+    font-size: 1.2em;
+  }
+
+  #header #brackets h1 {
+    font-size: 2.5em;
+  }
+
+  #header #link {
+    display: none;
+  }
+
+  #header #lft-bracket,
+  #rht-bracket {
+    display: none
+  }
+
+  #projects {
+    height: auto;
+    padding: 0 2em;
+  }
+
+  #projects #projects-header {
+    font-size: 1.8em;
+  }
+
+  #projects #first-project,
+  #second-project,
+  #third-project,
+  #fourth-project {
+    font-size: 1em;
+
+  }
+
+  #projects #about-link {
+    display: none;
+  }
+
+  #about {
+    height: auto;
+    padding: 2em 2em;
+  }
+
+  #about #contact-link {
+    display: none;
+  }
+
+  #contact {
+    padding: 0 2em;
+    height: auto;
+  }
+
+  #contact #iw {
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+
+  #contact #icons {
+    margin-bottom: 2em;
+  }
+}

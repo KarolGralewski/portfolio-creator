@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Your Portfolio</title>
+</head>
+
+<body>
+   <div id="header">
+      <div id="hdr-icons">
+         <a  href="{{ data.github }}" id="githubIconHeader" target="_blank">
+            <img src="github_grey.svg">
+         </a>
+      </div>
+      <h5 id="pt">Pleasure to meet you!</h5>
+      <div id="brackets">
+          <div id="lft-bracket">
+            <img title="lft-bracket" src="lft-bracket.svg">
+         </div>
+         <h1>  &nbsp Hi, I'm {{ data.name }}  {{ data.surname }}  &nbsp</h1>
+         <div id="rht-bracket">
+            <img title="rht-bracket" src="rht-bracket.svg">
+         </div>
+      </div>
+      <h3 id="info-short"> {{ data.infoShort }}</h3>
+      <a href="#projects" id="link">
+         <img title="projects-button" id="projects-link" src="projects.svg">
+      </a>
+   </div>
+
+
+   <div id="projects">
+      <h1 id="projects-header">Projects</h1>
+
+      <div id="first-project">{{ data.project0 }}</div>
+      <div id="second-project">{{ data.project1 }} </div>
+      <div id="third-project">{{ data.project2 }} </div>
+      <div id="fourth-project"></div>
+      <a href="#about">
+         <img title="projects-button" id="about-link" src="about.svg">
+      </a>
+   </div>
+
+
+   <div id="about">
+      <h1 id="info-header"> {{ data.infoLongHeader }}</h1>
+      <p id="info-long"> {{ data.infoLong }} <p />
+         <a href="#contact" id="contact-link">
+            <img title="projects-button" src="contact.svg">
+         </a>
+   </div>
+
+
+   <div id="contact">
+      <h5 id="iw">I would love to hear from you!</h5>
+      <h3 id="email"> {{ data.email }}</h3>
+      <h3 id="number">{{ data.number }}</h3>
+
+      <div id="icons">
+         <a href="{{ data.linkedin }} " id="linkedinIcon" target="_blank">
+            <img src="linkedin.svg">
+         </a>
+         <a href="{{ data.github }} "  id="githubIcon" target="_blank">
+            <img src="github.svg">
+         </a>
+         <a href="{{ data.twitter }} "  id="twitterIcon" target="_blank">
+            <img src="twitter.svg">
+         </a>
+         <a href="{{ data.telegram }} " id="telegramIcon" target="_blank">
+            <img src="telegram.svg">
+         </a>
+      </div>
+   </div>
+
+
+   <div id="footer">
+      <div id="shout">
+         <p><i>Check out<a href="" target="_blank">&nbsp @PortfolioCreator</a> &nbsp:)</i></p>
+      </div>
+
+   </div>
+</body>
+
+
+</html>

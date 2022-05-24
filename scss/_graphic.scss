@@ -1,0 +1,70 @@
+@import './functions';
+@import './variables';
+
+#graphic {
+   height: 20vh;
+   width: 65%;
+   background-color: $graphic-backg;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-around;
+   border-radius: 10px;
+
+
+   .gph {
+      color: $yellow;
+
+      @include flexCenter(column);
+
+      img {
+         width: 30px;
+         margin-bottom: 1em;
+      }
+
+      h1 {
+         color: $white-dark;
+         font-weight: 700;
+         font-size: 2.7em;
+      }
+
+      h5 {
+         font-weight: 600;
+         color: $white-dark;
+         font-size: clamp(0.9rem, 1vw, 2rem);
+         letter-spacing: 0.05em;
+      }
+   }
+
+   .arw img {
+      width: 25px;
+   }
+
+
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1200px) {
+   #graphic {
+      width: 80%;
+   }
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+   #graphic {
+      padding: 2em 0;
+      height: 15vh;
+      @include flexCenter(row);
+      text-align: center;
+      width: 100%;
+   }
+
+   .gph {
+      padding: 1em 2em;
+   }
+
+   .arw img {
+      display: none;
+   }
+}

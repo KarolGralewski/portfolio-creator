@@ -1,0 +1,32 @@
+#footer {
+   @include flexCenter(column);
+   color: $white-darker;
+   letter-spacing: 0.05em;
+   height: 10vh;
+   background-color: $blue-backg-dark;
+
+   h1 {
+      padding: 0 0.9em;
+      font-size: 1em;
+      font-weight: 700;
+      color: #454fbe96;
+      letter-spacing: 0em;
+   }
+
+   a {
+      @include flexCenter(column);
+
+      p {
+         font-size: 1em;
+         font-weight: 900;
+         color: #5865f296;
+
+      }
+
+      text-decoration: none;
+
+      img {
+         width: 30px;
+      }
+   }
+}

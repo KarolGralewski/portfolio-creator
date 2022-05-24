@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PortfolioCreator</title>
+   <link rel="stylesheet" href="../scss/style.css" />
+   <link rel="shortcut icon" href="../IMAGES/icon.png">
+
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   </style>
+</head>
+
+<body>
+
+   <div id="header">
+      <h5 id="wdc">Web developerzy go znienawidzą!</h5>
+      <h1 id="kr">Kreator Portfolio</h1>
+      <h5 id="bm">Przed Tobą być może jedyna strona, która pozwoli Ci stworzyć <br> swoją
+         wizytówkę w mniej niż 2 minuty!
+      </h5>
+
+      <a href="#how" id="button">
+         więcej
+      </a>
+
+   </div>
+   <div id="how" id="how">
+      <div id="how-text">
+         <h5 id="wz">Wiem, że chcesz zapytać</h5>
+         <h1 id="aj">Ale jak to działa?</h1>
+         <h2 id="cs">Cieszę się, że zadałeś to pytanie. Nie ma nic prostszego!</h2>
+      </div>
+      <div id="graphic-baner">
+         <div id="graphic">
+            <div class="gph">
+               <!-- <img title="number" src="../IMAGES/1.svg"> -->
+               <h1>1.</h1>
+               <h5>wpisujesz swoje dane</h5>
+            </div>
+            <div class="arw">
+               <img title="arrow" src="../IMAGES/arrow.svg">
+            </div>
+            <div class="gph">
+               <!-- <img title="number" src="../IMAGES/2.svg"> -->
+               <h1>2.</h1>
+               <h5>wybierasz motyw</h5>
+            </div>
+            <div class="arw">
+               <img title="arrow" src="../IMAGES/arrow.svg">
+            </div>
+            <div class="gph">
+               <!-- <img title="number" src="../IMAGES/3.svg"> -->
+               <h1>3.</h1>
+               <h5>zatwierdzasz</h5>
+            </div>
+            <div class="arw">
+               <img title="arrow" src="../IMAGES/arrow.svg">
+            </div>
+            <div class="gph">
+               <!-- <img title="number" src="../IMAGES/4.svg"> -->
+               <h1>4.</h1>
+               <h5>strona gotowa</h5>
+            </div>
+         </div>
+      </div>
+      <div id="inf">
+         <h1 id="td">Twoje dane są bardzo bezpieczne</h1>
+         <h2 id="dw">Dobra wiadomość - w żaden sposób nie przechowuję wprowadzonych danych</h2>
+         <h2 id="in">I nie zrobiłbym tego, nawet gdybym to potrafił</h2>
+         <a href="#main" id="go">zacznij tworzenie</a>
+      </div>
+   </div>
+   <div id="main">
+      <h1 id="aw">A więc</h1>
+      <h1 id="kp">Kreator portfolio</h1>
+      <div id="form-div">
+         <form id="form" action="http://127.0.0.1:5000/generate_template" method="post">
+
+            <h5 class="yell" id="sn">Sekcja - "Nagłówek"</h5>
+
+
+            <input id="name" class="short" type="text" name="name" placeholder="Imię*" />
+            <input id="surname" class="short" type="text" name="surname" placeholder="Nazwisko*" />
+            <textarea id="infoShort" name="infoShort" type="text" class="med" placeholder="Przedstaw się..."></textarea>
+
+            <h5 class="yell" id="so">Sekcja - "O mnie"</h5>
+            <textarea id="infoLongHeader" name="infoLongHeader" class="short"
+               placeholder="Nagłówek twojego bio"></textarea>
+            <textarea id="infoLong" name="infoLong" class="long" placeholder="O Tobie*"></textarea>
+            <h5 class="yell" id="so">Sekcja - "Projekty"</h5>
+
+            <section id="projects">
+               <textarea id="project0" name="project0" class="med" placeholder="Opowiedz o swoim projekcie"></textarea>
+            </section>
+
+            <button class="add" onclick="copyDiv()" id="newsectionbtn1" type="button"><img title="down-arrow"
+                  src="../IMAGES/plus.svg"></button>
+
+
+            <h5 class="yell" id="sl">Sekcja - "Kontakt"</h5>
+            <input class="link" class="short" id="email" type="text" name="email" placeholder="email@domain.com" />
+            <input class="link" class="short" id="number" type="text" name="number" placeholder="+48 123 456 789" />
+            <input class="link" class="short" id="github" type="text" name="github" placeholder="github.com/user" />
+            <input class="link" class="short" id="linkedin" type="text" name="linkedin"
+               placeholder="linkedin.com/user" />
+            <input class="link" class="short" id="twitter" type="text" name="twitter" placeholder="twitter.com/user" />
+            <input class="link" class="short" id="telegram" type="text" name="telegram"
+               placeholder="telegram.com/user" />
+            <div id="choices">
+               <h5 class=" yell" id="mot">Motyw:</h5>
+               <select id="template_version" name="template_version">
+                  <option value="basic_dark">Basic Dark</option>
+                  <option value="basic_light">Basic Light</option>
+               </select>
+               <h5 class=" yell" id="jz">Język:</h5>
+               <select id="language_choice" name="language_choice">
+                  <option value="_en">EN</option>
+                  <option value="_pl">PL</option>
+               </select><br><br>
+            </div>
+
+
+            <input class="button" id="submit" type="submit" value="stwórz!" />
+         </form>
+      </div>
+   </div>
+
+   <div id="footer">
+      <a href="https://github.com/KarolGralewski" target="_blank">
+         <img src="../images/git.svg">
+         <p>Source code</p>
+      </a>
+      <h1>Karol Gralewski</h1>
+   </div>
+</body>
+
+<script src="../JS/functions.js"></script>
+
+</html>

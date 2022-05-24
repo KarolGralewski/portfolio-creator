@@ -1,0 +1,51 @@
+@import './functions';
+@import './variables';
+
+#how {
+   background-color: $blue-backg-light;
+   text-align: center;
+
+   #how-text {
+      @include flexCenter(column);
+      height: 39vh;
+      padding: 3em 0em;
+
+      #wz {
+         color: $yellow;
+         font-size: clamp(0.8rem, 1vw, 1.1rem);
+         font-weight: 600;
+         letter-spacing: 0.3em;
+         margin-bottom: 0.2em;
+      }
+
+      #aj {
+         color: $white;
+         font-weight: 500;
+
+         font-size: clamp(3rem, 3.2vw, 8rem);
+      }
+
+      #cs {
+         margin-top: 1em;
+         color: $white-darker;
+         font-size: clamp(0.9rem, 1.1vw, 2rem);
+         font-weight: 500;
+      }
+
+   }
+}
+
+
+@media screen and (max-width: 600) {
+   #how {
+      #how-text {
+         #wz {
+            @include flexCenter(column);
+         }
+
+         #aj {
+            color: red;
+         }
+      }
+   }
+}
