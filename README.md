@@ -8,9 +8,6 @@ PortfolioCreator is a simple webapp with Flask backend, that lets you create por
 
 ## Setup
 
-./html/index.html - our webapp
-
-./src/python - backend
 
 To run backend:
 1. Go to src/python in command line
@@ -23,3 +20,8 @@ To run backend:
 	"python3 main.py"
 ```
 4. Run the /html/main.html
+
+
+./html/index.html - our webapp
+
+./src/python - backend
