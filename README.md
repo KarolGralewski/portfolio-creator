@@ -10,7 +10,7 @@ PortfolioCreator is a simple webapp with Flask backend, that lets you create por
 
 
 To run backend:
-1. Go to src/python in command line
+1. Go to src/python 
 2. Install requirements: 
 ```
 	"pip3 install -r requirements.txt"
