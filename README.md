@@ -2,7 +2,7 @@
 # Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
-* [TODO]((#todo)
+* [TODO](#todo)
 * [What's next?](#What's next?)
 
 ## General info
