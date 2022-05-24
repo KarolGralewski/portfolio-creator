@@ -30,7 +30,7 @@ To run backend:
 
 
 ## TODO 
-* Improve the responsiveness of both main.html and created webpage [❌]
+* Improve the design and responsiveness of both main.html and created webpage [❌]
 * Implementing the path folder mapping while creating .zip [❌]
 
 ## What's next? 
