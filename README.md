@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-PortfolioCreator is a simple webapp with Flask backend, that creates web pages based on user inputs
+PortfolioCreator is a simple webapp with Flask backend, that lets you create portfolio webpage
 
 ## Setup
 
