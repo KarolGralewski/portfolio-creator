@@ -15,12 +15,12 @@ PortfolioCreator is a simple webapp with Flask backend, that creates web pages b
 ./src/python - backend
 
 To run backend:
-	1. Go to src/python in command line
-	2. Install requirements: 
+1. Go to src/python in command line
+2. Install requirements: 
 ```
 	"pip3 install -r requirements.txt"
 ```
-	3. Run application:
+3. Run application:
 ```
 	"python3 main.py"
 ```
