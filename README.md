@@ -2,8 +2,8 @@
 # Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
-* [TODO](#todo)
-* [What's next?](#What's next?)
+* [ToDo](#todo)
+* [What's next?](#what's-next?)
 
 ## General info
 PortfolioCreator is a simple webapp with Flask backend, that lets you create a portfolio webpage
