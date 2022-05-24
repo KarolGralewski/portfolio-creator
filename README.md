@@ -30,8 +30,8 @@ To run backend:
 
 
 ## TODO 
-* [x] Improve the responsiveness of both main.html and created webpage
-* [x] Implementing the path folder mapping while creating .zip
+* ❌Improve the responsiveness of both main.html and created webpage
+* ❌Implementing the path folder mapping while creating .zip
 
 ## What's next? 
 I plan to successively add more portfolio templates in my spare time, adding more features to them (dark mode, changing languages) and more exciting stuff 
