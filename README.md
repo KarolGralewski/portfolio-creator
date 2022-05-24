@@ -2,9 +2,11 @@
 # Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
+* [TODO]((#TODO)
+* [What's next?](#What's next?)
 
 ## General info
-PortfolioCreator is a simple webapp with Flask backend, that lets you create portfolio webpage
+PortfolioCreator is a simple webapp with Flask backend, that lets you create a portfolio webpage
 
 ## Setup
 
@@ -25,3 +27,11 @@ To run backend:
 ./html/index.html - our webapp
 
 ./src/python - backend
+
+
+## TODO 
+* [x] Improve the responsiveness of both main.html and created webpage
+* [x] Implementing the path folder mapping while creating .zip
+
+## What's next? 
+I plan to successively add more portfolio templates in my spare time, adding more features to them (dark mode, changing languages) and more exciting stuff 
