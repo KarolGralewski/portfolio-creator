@@ -34,4 +34,4 @@ To run backend:
 * Implement the path folder mapping while creating .zip [❌]
 
 ## What's next? 
-I plan to successively add portfolio templates with better features (dark mode, animations and more exciting stuff) 
+I plan to successively add portfolio templates with better features (dark mode, animations and overall better design) 
