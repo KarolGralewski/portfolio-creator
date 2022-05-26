@@ -21,10 +21,6 @@ To run backend:
 3. Run the /html/main.html
 
 
-./html/index.html - webapp
-
-./src/python - backend
-
 
 ## TODO 
 * Improve the design and responsiveness of both main.html and created webpage [❌]
