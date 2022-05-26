@@ -6,7 +6,7 @@
 * [What's next?](#whats-next?)
 
 ## General info
-PortfolioCreator is simple a webapp with a Flask backend - it lets the user build his Portfolio Webpage simply by filling one form.
+PortfolioCreator is simple a webapp with a Flask backend that lets the user build his Portfolio Webpage simply by filling one form.
 
 ## Setup
 
