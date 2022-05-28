@@ -141,9 +141,9 @@
   border: none;
   text-decoration: none;
   color: #c2c2c2;
-  font-size: 1.3em;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
   margin-top: 4em;
   text-decoration: none;
   background-color: #5865f3;
@@ -247,8 +247,8 @@
 #how #how-text #cs {
   margin-top: 1em;
   color: #c2c2c2;
-  font-size: clamp(0.9rem, 1.1vw, 2rem);
-  font-weight: 500;
+  font-size: clamp(1.05rem, 1.15vw, 1.3rem);
+  font-weight: 800;
 }
 
 @media screen and (max-width: 600) {
@@ -278,22 +278,22 @@
 
 #inf #td {
   font-size: clamp(2.4rem, 2.4vw, 3.4rem);
-  font-weight: 500;
+  font-weight: 600;
   color: #e8e8e8;
 }
 
 #inf #dw {
   margin-top: 1em;
   color: #c2c2c2;
-  font-size: clamp(1.1rem, 1.15vw, 3rem);
-  font-weight: 500;
+  font-size: clamp(1.2rem, 1.3vw, 1.4rem);
+  font-weight: 600;
 }
 
 #inf #in {
   margin-top: 1em;
   color: #c2c2c2;
-  font-size: clamp(1.1rem, 1.15vw, 3rem);
-  font-weight: 500;
+  font-size: clamp(1.05rem, 1.1vw, 3rem);
+  font-weight: 600;
 }
 
 #inf #go {
@@ -306,7 +306,7 @@
   margin-top: 3em;
   text-decoration: none;
   background-color: #5865f3;
-  padding: 0.7em 2em;
+  padding: 0.6em 3em;
   border-radius: 10px;
   -webkit-box-shadow: 0px 7px #313881;
           box-shadow: 0px 7px #313881;
@@ -618,14 +618,14 @@ html {
 #main h2 {
   color: #c2c2c2;
   font-size: clamp(1rem, 0.9vw, 2rem);
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.05em;
   margin-bottom: 0.5em;
 }
 
 #main #kp {
   color: #e8e8e8;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(3rem, 3.5vw, 8rem);
 }
 
@@ -640,7 +640,7 @@ html {
 #main #aw {
   color: #5865f3;
   font-size: clamp(0.8rem, 1vw, 1.1rem);
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 0.3em;
   margin-bottom: 0.2em;
 }
@@ -674,14 +674,16 @@ html {
 #form .yell {
   margin-top: 1em;
   margin-bottom: -0.3em;
-  color: #e8e8e8;
+  color: #c2c2c2;
   font-size: clamp(1.2rem, 1.3vw, 3rem);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #form *:focus {
   outline: none;
   border: 3px solid #5865f3 !important;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 #form .short,
@@ -690,21 +692,8 @@ html {
 #form .link,
 #form .project,
 #form select {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #0a1424;
-  border: solid 4px rgba(66, 75, 174, 0.404);
+  border: solid 3px rgba(66, 75, 174, 0.404);
   margin-top: 1.8em;
   border-radius: 7px;
   font-size: 1em;
@@ -718,28 +707,28 @@ html {
 #form textarea::-webkit-input-placeholder {
   color: #313881;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 #form input:-ms-input-placeholder,
 #form textarea:-ms-input-placeholder {
   color: #313881;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 #form input::-ms-input-placeholder,
 #form textarea::-ms-input-placeholder {
   color: #313881;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 #form input::placeholder,
 #form textarea::placeholder {
   color: #313881;
   letter-spacing: 0.05em;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 #form .link {
@@ -788,13 +777,13 @@ html {
   border: none;
   text-decoration: none;
   color: white;
-  font-size: 1.3em;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
   margin-top: 2em;
   text-decoration: none;
   background-color: #5865f3;
-  padding: 0.4em 6em;
+  padding: 0.5em 6em;
   border-radius: 10px;
   -webkit-box-shadow: 0px 7px #313881;
           box-shadow: 0px 7px #313881;

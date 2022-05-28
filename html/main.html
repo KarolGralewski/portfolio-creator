@@ -26,7 +26,7 @@
       two minutes!
     </h5>
 
-    <a href="#how" id="button"> more </a>
+    <a href="#how" id="button"> Show me! </a>
   </div>
   <div id="how" id="how">
     <div id="how-text">
@@ -74,7 +74,8 @@
       <h2 id="dw">
         Good news - I don't store your data in any kind of way!
       </h2>
-      <h2 id="in">And I would't do that even if I could :)</h2>
+      <h2 id="in">And I would't do that even if I could do such things :)</h2>
+      <h2 id="in">Sounds intresting?</h2>
       <a href="#main" id="go">Let's do it!</a>
     </div>
   </div>
@@ -83,7 +84,7 @@
     <h1 id="kp">Portfolio Creator</h1>
     <div id="form-div">
       <form id="form" action="http://127.0.0.1:5000/generate_template" method="post">
-        <h5 class="yell" id="sn">Section - "Heading"</h5>
+        <h5 class="yell" id="sn">Heading</h5>
 
         <input id="name" class="short" type="text" name="name" placeholder="First name*" required />
         <input id="surname" class="short" type="text" name="surname" placeholder="Second name*" required />
@@ -99,12 +100,12 @@
         </form> -->
 
 
-        <h5 class="yell" id="so">Section - "About me"</h5>
+        <h5 class="yell" id="so">About me</h5>
         <textarea id="infoLongHeader" name="infoLongHeader" class="short" placeholder="Header of your bio..."
           maxlength="30"></textarea>
         <textarea id="infoLong" name="infoLong" class="long" placeholder="Write a note about yourself...*" required
           maxlength="300"></textarea>
-        <h5 class="yell" id="so">Section - "Projects"</h5>
+        <h5 class="yell" id="so">Projects</h5>
 
         <section id="projects">
           <textarea id="project0" name="project0" class="med"
@@ -115,27 +116,27 @@
           <img title="down-arrow" src="../IMAGES/plus.svg" />
         </button>
 
-        <h5 class="yell" id="sl">Section - "Contact"</h5>
+        <h5 class="yell" id="sl">Contact</h5>
         <input class="link" class="short" id="email" type="email" name="email" placeholder="email@domain.com" />
         <input class="link" class="short" id="number" type="num" name="number" placeholder="+48 123 456 789" />
-        <input class="link" class="short" id="github" type="text" name="github" placeholder="github.com/user" />
+        <!-- <input class="link" class="short" id="github" type="text" name="github" placeholder="github.com/user" /> -->
         <input class="link" class="short" id="linkedin" type="text" name="linkedin" placeholder="linkedin.com/user" />
         <input class="link" class="short" id="twitter" type="text" name="twitter" placeholder="twitter.com/user" />
         <input class="link" class="short" id="telegram" type="text" name="telegram" placeholder="telegram.com/user" />
         <div id="choices">
-          <h5 class="yell" id="mot">Motyw:</h5>
+          <h5 class="yell" id="mot">Theme:</h5>
           <select id="template_version" name="template_version">
             <option value="basic_dark">Basic Dark</option>
             <option value="basic_light">Basic Light</option>
           </select>
-          <h5 class="yell" id="jz">Język:</h5>
+          <h5 class="yell" id="jz">Language:</h5>
           <select id="language_choice" name="language_choice">
             <option value="_en">EN</option>
             <option value="_pl">PL</option>
           </select><br /><br />
         </div>
 
-        <input class="button" id="submit" type="submit" value="stwórz!" />
+        <input class="button" id="submit" type="submit" value="Create!" />
       </form>
 
 
