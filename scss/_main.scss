@@ -65,6 +65,10 @@
       font-weight: 600;
    }
 
+   #projects {
+      @include flexCenter(column);
+   }
+
    *:focus {
       outline: none;
       border: 3px solid $yellow  !important;

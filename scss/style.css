@@ -401,8 +401,8 @@ html {
 }
 
 #graphic .gph h5 {
-  font-weight: 600;
-  color: #e6e6e6;
+  font-weight: 800;
+  color: #c2c2c2;
   font-size: clamp(0.9rem, 1vw, 2rem);
   letter-spacing: 0.05em;
 }
@@ -677,6 +677,22 @@ html {
   color: #c2c2c2;
   font-size: clamp(1.2rem, 1.3vw, 3rem);
   font-weight: 600;
+}
+
+#form #projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #form *:focus {
