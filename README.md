@@ -1,5 +1,5 @@
 
-![expample image1](./images/img1.png)
+![expample image1](./images/combined.png)
 
 # Table of contents
 * [General info](#general-info)
