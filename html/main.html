@@ -17,21 +17,23 @@
 
 <body>
   <div id="header">
-    <h5 id="wdc">Web developerzy go znienawidzą!</h5>
-    <h1 id="kr">Kreator Portfolio</h1>
+    <h5 id="wdc">Web developers will hate him!</h5>
+    <h1 id="kr">Portfolio Creator</h1>
     <h5 id="bm">
-      Przed Tobą być może jedyna strona, która pozwoli Ci stworzyć <br />
-      swoją wizytówkę w mniej niż 2 minuty!
+      <!-- Przed Tobą być może jedyna strona, która pozwoli Ci stworzyć <br />
+      swoją wizytówkę w mniej niż 2 minuty! -->
+      The webpage which may well be first of its kind, that will let <br> you build your portfolio webpage in less than
+      two minutes!
     </h5>
 
-    <a href="#how" id="button"> więcej </a>
+    <a href="#how" id="button"> more </a>
   </div>
   <div id="how" id="how">
     <div id="how-text">
-      <h5 id="wz">Wiem, że chcesz zapytać</h5>
-      <h1 id="aj">Ale jak to działa?</h1>
+      <h5 id="wz">I know you would want to ask</h5>
+      <h1 id="aj">But how does it work?</h1>
       <h2 id="cs">
-        Cieszę się, że zadałeś to pytanie. Nie ma nic prostszego!
+        I'm glad you asked. Here, it's that simple:
       </h2>
     </div>
     <div id="graphic-baner">
@@ -39,7 +41,7 @@
         <div class="gph">
           <!-- <img title="number" src="../IMAGES/1.svg"> -->
           <h1>1.</h1>
-          <h5>wpisujesz swoje dane</h5>
+          <h5>enter your data</h5>
         </div>
         <div class="arw">
           <img title="arrow" src="../IMAGES/arrow.svg" />
@@ -47,7 +49,7 @@
         <div class="gph">
           <!-- <img title="number" src="../IMAGES/2.svg"> -->
           <h1>2.</h1>
-          <h5>wybierasz motyw</h5>
+          <h5>choose a theme</h5>
         </div>
         <div class="arw">
           <img title="arrow" src="../IMAGES/arrow.svg" />
@@ -55,7 +57,7 @@
         <div class="gph">
           <!-- <img title="number" src="../IMAGES/3.svg"> -->
           <h1>3.</h1>
-          <h5>zatwierdzasz</h5>
+          <h5>confirm the changes</h5>
         </div>
         <div class="arw">
           <img title="arrow" src="../IMAGES/arrow.svg" />
@@ -63,29 +65,29 @@
         <div class="gph">
           <!-- <img title="number" src="../IMAGES/4.svg"> -->
           <h1>4.</h1>
-          <h5>strona gotowa</h5>
+          <h5>your .zip is ready</h5>
         </div>
       </div>
     </div>
     <div id="inf">
-      <h1 id="td">Twoje dane są bardzo bezpieczne</h1>
+      <h1 id="td">All your data is kept secret</h1>
       <h2 id="dw">
-        Dobra wiadomość - w żaden sposób nie przechowuję wprowadzonych danych
+        Good news - I don't store your data in any kind of way!
       </h2>
-      <h2 id="in">I nie zrobiłbym tego, nawet gdybym to potrafił</h2>
-      <a href="#main" id="go">zacznij tworzenie</a>
+      <h2 id="in">And I would't do that even if I could :)</h2>
+      <a href="#main" id="go"></a>
     </div>
   </div>
   <div id="main">
-    <h1 id="aw">A więc</h1>
-    <h1 id="kp">Kreator portfolio</h1>
+    <h1 id="aw">So, finally</h1>
+    <h1 id="kp">Portfolio Creator</h1>
     <div id="form-div">
       <form id="form" action="http://127.0.0.1:5000/generate_template" method="post">
-        <h5 class="yell" id="sn">Sekcja - "Nagłówek"</h5>
+        <h5 class="yell" id="sn">Section - "Heading"</h5>
 
-        <input id="name" class="short" type="text" name="name" placeholder="Imię*" required />
-        <input id="surname" class="short" type="text" name="surname" placeholder="Nazwisko*" required />
-        <textarea id="infoShort" name="infoShort" type="text" class="med" placeholder="Przedstaw się..."
+        <input id="name" class="short" type="text" name="name" placeholder="First name*" required />
+        <input id="surname" class="short" type="text" name="surname" placeholder="Second name*" required />
+        <textarea id="infoShort" name="infoShort" type="text" class="med" placeholder="Introduce yourself..."
           maxlength="100"></textarea>
         <!-- <span id="infoShortCharCount">100/100</span> -->
 
@@ -97,24 +99,25 @@
         </form> -->
 
 
-        <h5 class="yell" id="so">Sekcja - "O mnie"</h5>
-        <textarea id="infoLongHeader" name="infoLongHeader" class="short" placeholder="Nagłówek twojego bio"
+        <h5 class="yell" id="so">Section - "About me"</h5>
+        <textarea id="infoLongHeader" name="infoLongHeader" class="short" placeholder="Header of your bio..."
           maxlength="30"></textarea>
-        <textarea id="infoLong" name="infoLong" class="long" placeholder="O Tobie*" required maxlength="300"></textarea>
-        <h5 class="yell" id="so">Sekcja - "Projekty"</h5>
+        <textarea id="infoLong" name="infoLong" class="long" placeholder="Write a note about you...*" required
+          maxlength="300"></textarea>
+        <h5 class="yell" id="so">Section - "Projects"</h5>
 
         <section id="projects">
-          <textarea id="project0" name="project0" class="med" placeholder="Opowiedz o swoim projekcie*" required
-            maxlength="200"></textarea>
+          <textarea id="project0" name="project0" class="med"
+            placeholder="Describe a project that you've been working on...*" required maxlength="200"></textarea>
         </section>
 
         <button class="add" onclick="copyDiv()" id="newsectionbtn1" type="button">
           <img title="down-arrow" src="../IMAGES/plus.svg" />
         </button>
 
-        <h5 class="yell" id="sl">Sekcja - "Kontakt"</h5>
-        <input class="link" class="short" id="email" type="text" name="email" placeholder="email@domain.com" />
-        <input class="link" class="short" id="number" type="text" name="number" placeholder="+48 123 456 789" />
+        <h5 class="yell" id="sl">Section - "Contact"</h5>
+        <input class="link" class="short" id="email" type="email" name="email" placeholder="email@domain.com" />
+        <input class="link" class="short" id="number" type="num" name="number" placeholder="+48 123 456 789" />
         <input class="link" class="short" id="github" type="text" name="github" placeholder="github.com/user" />
         <input class="link" class="short" id="linkedin" type="text" name="linkedin" placeholder="linkedin.com/user" />
         <input class="link" class="short" id="twitter" type="text" name="twitter" placeholder="twitter.com/user" />
@@ -145,7 +148,6 @@
       <img src="../images/git.svg" />
       <p>Source code</p>
     </a>
-    <h1>Karol Gralewski</h1>
   </div>
 </body>
 
