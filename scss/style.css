@@ -199,8 +199,8 @@
 
 @media screeen and (max-width: 600px) {
   #header {
-    padding: 0 1em;
-    background-color: red;
+    padding: 3em 1em;
+    height: auto;
   }
   #header #button {
     display: none;
@@ -252,23 +252,9 @@
 }
 
 @media screen and (max-width: 600) {
-  #how #how-text #wz {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #how #how-text #aj {
-    color: red;
+  #how #how-text {
+    padding: 2em 0em;
+    height: auto;
   }
 }
 
@@ -340,6 +326,16 @@
           box-shadow: 0 3px #313881;
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
+}
+
+@media screen and (max-width: 600px) {
+  #inf {
+    height: auto;
+    padding: 5em 3em;
+  }
+  #inf #go {
+    display: none;
+  }
 }
 
 * {
@@ -442,7 +438,33 @@ html {
     width: 100%;
   }
   .gph {
-    padding: 1em 2em;
+    padding: 1em 1.5em;
+  }
+  .arw img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #graphic {
+    padding: 2em 0;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gph {
+    padding: 2em 0;
   }
   .arw img {
     display: none;
@@ -994,10 +1016,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   text-decoration: none;
 }
 
@@ -1009,6 +1031,7 @@ html {
 
 #footer a img {
   width: 30px;
+  margin-right: 0.5em;
 }
 
 @keyframes swing {

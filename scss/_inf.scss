@@ -54,3 +54,16 @@
       }
    }
 }
+
+@media screen and (max-width: 600px) {
+   #inf {
+      height: auto;
+      padding: 5em 3em;
+
+      #go {
+         display: none;
+      }
+   }
+
+
+}

@@ -39,13 +39,8 @@
 @media screen and (max-width: 600) {
    #how {
       #how-text {
-         #wz {
-            @include flexCenter(column);
-         }
-
-         #aj {
-            color: red;
-         }
+         padding: 2em 0em; 
+         height: auto;
       }
    }
 }

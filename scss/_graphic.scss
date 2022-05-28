@@ -61,7 +61,23 @@
    }
 
    .gph {
-      padding: 1em 2em;
+      padding: 1em 1.5em;
+   }
+
+   .arw img {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   #graphic {
+      padding: 2em 0; 
+      height: auto;
+      @include flexCenter(column);
+   }
+
+   .gph {
+      padding: 2em 0; 
    }
 
    .arw img {

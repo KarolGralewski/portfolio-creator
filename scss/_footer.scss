@@ -14,19 +14,19 @@
    }
 
    a {
-      @include flexCenter(column);
+      @include flexCenter(row);
 
       p {
          font-size: 1em;
          font-weight: 900;
          color: #5865f296;
-
       }
 
       text-decoration: none;
 
       img {
          width: 30px;
+         margin-right: 0.5em;
       }
    }
 }
