@@ -47,6 +47,11 @@
 #form {
    @include flexCenter(column);
 
+   #infoShortCharCount {
+      color: $white-dark;
+      font-weight: 700;
+   }
+
    a {
       margin-top: 3em;
       text-decoration: none;

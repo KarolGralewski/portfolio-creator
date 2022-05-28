@@ -101,7 +101,7 @@
 
 #header #bm {
   margin-top: 0.5em;
-  color: #d9d9d9;
+  color: #c2c2c2;
   font-size: clamp(1.1rem, 1.2vw, 1.4rem);
   font-weight: 500;
   line-height: 1.5em;
@@ -140,7 +140,7 @@
   bottom: 30%;
   border: none;
   text-decoration: none;
-  color: #d9d9d9;
+  color: #c2c2c2;
   font-size: 1.3em;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -246,7 +246,7 @@
 
 #how #how-text #cs {
   margin-top: 1em;
-  color: #d9d9d9;
+  color: #c2c2c2;
   font-size: clamp(0.9rem, 1.1vw, 2rem);
   font-weight: 500;
 }
@@ -298,14 +298,14 @@
 
 #inf #dw {
   margin-top: 1em;
-  color: #d9d9d9;
+  color: #c2c2c2;
   font-size: clamp(1.1rem, 1.15vw, 3rem);
   font-weight: 500;
 }
 
 #inf #in {
   margin-top: 1em;
-  color: #d9d9d9;
+  color: #c2c2c2;
   font-size: clamp(1.1rem, 1.15vw, 3rem);
   font-weight: 500;
 }
@@ -594,7 +594,7 @@ html {
 }
 
 #main h2 {
-  color: #d9d9d9;
+  color: #c2c2c2;
   font-size: clamp(1rem, 0.9vw, 2rem);
   font-weight: 300;
   letter-spacing: 0.05em;
@@ -609,7 +609,7 @@ html {
 
 #main #wd {
   margin-top: 1em;
-  color: #d9d9d9;
+  color: #c2c2c2;
   font-weight: 500;
   letter-spacing: 0.03em;
   font-size: clamp(1rem, 1.5vw, 8rem);
@@ -637,6 +637,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#form #infoShortCharCount {
+  color: #e6e6e6;
+  font-weight: 700;
 }
 
 #form a {
@@ -965,7 +970,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #d9d9d9;
+  color: #c2c2c2;
   letter-spacing: 0.05em;
   height: 10vh;
   background-color: #050d1a;
