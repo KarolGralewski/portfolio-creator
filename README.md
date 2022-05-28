@@ -1,4 +1,6 @@
 
+![expample image1](./images/img1.png)
+
 # Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
