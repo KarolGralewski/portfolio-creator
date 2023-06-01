@@ -1,6 +1,10 @@
 
 ![expample image1](./images/img1.png)
 
+
+https://github.com/KarolGralewski/portfolio-creator/assets/63659958/94286067-1a6f-4e94-8d09-60b802ae9323
+
+
 # Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
