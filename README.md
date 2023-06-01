@@ -1,18 +1,12 @@
 
-![expample image1](./images/img1.png)
-
 
 https://github.com/KarolGralewski/portfolio-creator/assets/63659958/94286067-1a6f-4e94-8d09-60b802ae9323
 
 
-# Table of contents
-* [General info](#general-info)
-* [Setup](#setup)
-* [ToDo](#todo)
-* [What's next?](#whats-next?)
+
 
 ## General info
-PortfolioCreator is simple a webapp with a Flask backend that lets the user build his Portfolio Webpage simply by filling one form.
+Webapp for creating Portfolio websites. While I don't think it's ready for deployment, you may find it usefull as a baseline for your portfolio. 
 
 ## Setup
 
@@ -26,11 +20,3 @@ To run backend:
 ```
 3. Run the /html/main.html
 
-
-
-## TODO 
-* Improve the design and responsiveness of both main.html and created webpage [❌]
-* Implement the path folder mapping while creating .zip [❌]
-
-## What's next? 
-I plan to successively add portfolio templates with better features (enabling dark mode, animations and overall better design) 
