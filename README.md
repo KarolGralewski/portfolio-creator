@@ -1,7 +1,5 @@
 
 
-https://github.com/KarolGralewski/portfolio-creator/assets/63659958/94286067-1a6f-4e94-8d09-60b802ae9323
-
 
 
 
@@ -20,3 +18,5 @@ To run backend:
 ```
 3. Run the /html/main.html
 
+
+https://github.com/KarolGralewski/portfolio-creator/assets/63659958/94286067-1a6f-4e94-8d09-60b802ae9323
